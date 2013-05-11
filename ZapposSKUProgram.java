@@ -3,6 +3,11 @@
  * 3/27/2013
  * Zappos Java Test Program for Software Engineering Position.
  * 
+ * This program is designed to take in a filename from the command line 
+ * and then download the images associated with the input data and put them 
+ * in a directory under the current working directory entitled "images". 
+ * 
+ * The sample file included in the Repo is "skus.txt".
  * 
  */
 
@@ -10,8 +15,9 @@
 import java.io.*;
 import java.net.*;
 
-public class ZapposSKUProgram {
+public class ZapposSkuProgram {
 
+    // This is the API key that is used for making the API call to Zappos API. 
     final static String apiKey = "&key=52ddafbe3ee659bad97fcce7c53592916a6bfd73";
 
     public static void main(String[] args) {

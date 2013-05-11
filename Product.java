@@ -2,6 +2,12 @@
  * Joshua Lynn - Zappos Java Take Home Test for Software Engineer Position
  * 3/27/2013
  * 
+ * This is a Product class used to create Product objects from data that is 
+ * obtained from a JSON string in the default constructor. It also allows 
+ * for the images associated with this product to be downloaded from the 
+ * API call. 
+ * 
+ * 
  */
 
 import java.io.*;
