@@ -25,7 +25,7 @@ public class ZapposSkuProgram {
         // Check for a valid number of command line arguments. If invalid display error message and halt execution.
         if (args.length != 1) { 
             System.err.println("Error: incorrect number of arguments passed to program.\n" +
-                               "  Proper usage: 'java ZapposSKUProgram <input file>'");
+                               "  Proper usage: 'java ZapposSkuProgram <input file>'");
             System.exit(1);
         } else {
             try {
@@ -50,7 +50,6 @@ public class ZapposSkuProgram {
     }
     
     static Product APICaller(String sku) {
-        
         try {
             // create new URL object for handling Zappos API Call
             URL apiCall = new URL("http://api.zappos.com/Product?id=" + sku.replace(" ", "") + apiKey);
@@ -79,7 +78,6 @@ public class ZapposSkuProgram {
             // Error thrown if there is a 400 message returned by the URL reader call
             System.err.println("Invalid SKU.");
         }
-        
          return null;   
     }   
 }
